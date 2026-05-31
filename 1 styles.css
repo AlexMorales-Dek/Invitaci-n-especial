@@ -1,0 +1,216 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111; /* Fondo oscuro premium */
+    color: #e5e5e5;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #d4af37; /* Color Oro */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* PORTADA HERO */
+.gala-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
+                url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.gala-subtitle {
+    color: #d4af37;
+    letter-spacing: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.divider {
+    height: 1px;
+    width: 80px;
+    background-color: #d4af37;
+    margin: 15px auto;
+}
+
+.generation {
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.gala-date {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #d4af37;
+    font-style: italic;
+}
+
+/* ITINERARIO (TIMELINE) */
+.itinerary-section {
+    background-color: #161616;
+    padding: 60px 20px;
+}
+
+.timeline {
+    max-width: 450px;
+    margin: 0 auto;
+    border-left: 1px solid #d4af37;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    background: #d4af37;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.time {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.activity {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 3px;
+}
+
+/* TARJETA CÓDIGO DE VESTIMENTA */
+.dresscode-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.dress-type {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.dress-details {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin: 8px 0;
+}
+
+.note {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* SECCIONES Y BOTONES */
+section {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.location-card {
+    background: #161616;
+    padding: 30px;
+    border: 1px solid #d4af3740;
+}
+
+.location-card p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.gala-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #111;
+}
+
+.btn-gold:hover {
+    background-color: #fff;
+    color: #111;
+    transform: scale(1.03);
+}
+
+.btn-dark {
+    background-color: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+}
+
+.btn-dark:hover {
+    background-color: #d4af37;
+    color: #111;
+}
+
+.gala-rsvp p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #555;
+    font-size: 0.75rem;
+    border-top: 1px solid #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .hero-overlay h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    .timeline { max-width: 100%; }
+}
